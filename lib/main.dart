@@ -11,18 +11,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
-        primaryColor: Color(0xFF0083ca),
+        primaryColor: Color(0xFF303030),
         accentColor: Color(0xFFffce00),
         textTheme: TextTheme(
-          headline: TextStyle(fontSize: 72, fontWeight: FontWeight.bold),
-          title: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
-          body1: TextStyle(fontSize: 14),
-          button: TextStyle(fontSize: 16),
+          body1: TextStyle(fontSize: 16),
         ),
-        buttonTheme: ButtonThemeData(
-          buttonColor: Color(0xFF5295cc),
-          textTheme: ButtonTextTheme.normal,
-        )
       ),
       home: HomePage(),
     );

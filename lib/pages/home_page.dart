@@ -1,3 +1,4 @@
+import 'package:burgers/pages/details_page.dart';
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 import 'package:burgers/models/burger_model.dart';
@@ -41,7 +42,10 @@ class HomePage extends StatelessWidget {
                           return Card(
                             child: InkWell(
                               onTap: () {
-                                print('Card tapped.');
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => DetailsPage(burger: burgers[index])),
+                                );
                               },
                               child: new Container(
                                 height: 250,
@@ -69,7 +73,8 @@ class HomePage extends StatelessWidget {
                             ),
                           );
                         },
-                    ));
+                    )
+                  );
                 }
               },
             )

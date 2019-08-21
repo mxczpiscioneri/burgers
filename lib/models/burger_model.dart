@@ -6,6 +6,7 @@ class Burger {
   List<String> method;
   String name;
   String refer;
+  String video;
   int serves;
   String time;
   String tips;
@@ -18,6 +19,7 @@ class Burger {
     this.method,
     this.name,
     this.refer,
+    this.video,
     this.serves,
     this.time,
     this.tips
@@ -31,6 +33,7 @@ class Burger {
     method = json['method'].cast<String>();
     name = json['name'];
     refer = json['refer'];
+    video = json['video'];
     serves = json['serves'];
     time = json['time'];
     tips = json['tips'];
@@ -45,6 +48,7 @@ class Burger {
     data['method'] = this.method;
     data['name'] = this.name;
     data['refer'] = this.refer;
+    data['video'] = this.video;
     data['serves'] = this.serves;
     data['time'] = this.time;
     data['tips'] = this.tips;
